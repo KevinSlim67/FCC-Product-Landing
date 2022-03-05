@@ -1,0 +1,272 @@
+html {
+    font-family: Tahoma, Geneva, sans-serif;
+    font-size: 20px;
+    text-align: justify;
+    --nav-height: 30px;
+}
+
+#header {
+    margin: 0 auto;
+    height: auto;
+}
+
+body {
+    background-color: rgb(255, 255, 255);
+    margin: 0;
+}
+
+form {
+    margin: 0;
+}
+
+#nav-bar {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: stretch;
+    position: fixed;
+    background-color: black;
+    height: auto;
+    width: 100%;
+    z-index: 10;
+}
+
+#nav-bar .nav-link {
+    position: relative;
+    color: rgb(230, 225, 218);
+    text-shadow: 2px 1px 1px rgba(34, 31, 28, 0.6);
+    font-size: 0.45em;
+    font-weight: 700;
+    font-style: normal;
+    font-variant: small-caps;
+    text-transform: uppercase;
+
+    background-color: transparent;
+    border-color: transparent;
+
+    padding: 0 0.5rem 0 0.5rem;
+    height: var(--nav-height);
+}
+
+#nav-bar .nav-link:hover {
+    background-color: rgb(48, 45, 45);
+}
+
+#nav-separator {
+    width: 100%;
+    height: var(--nav-height);
+}
+
+#header-container {
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    margin: 0 auto;
+    background: -webkit-linear-gradient(45deg, #969696 0%, #C4C4C4 54%, #E5E5E5 100%);
+
+    height: 450px;
+    width: 100%;
+    justify-content: space-between;
+}
+
+#product-container {
+    height: 100%;
+    width: 40%;
+    align-self: center;
+    text-align: center;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    font-size: 50px;
+    letter-spacing: 2px;
+    word-spacing: 2px;
+    color: #1d1c1c;
+    font-weight: 700;
+    font-variant: small-caps;
+    text-transform: uppercase;
+}
+
+#product {
+    width: 100%;
+    height: auto;
+    align-self: center;
+    z-index: 1;
+}
+
+#slogan {
+    margin-top: 5%;
+    font-size: 0.5em;
+    color: rgb(78, 76, 73);
+
+    width: 100%;
+    height: auto;
+    align-self: center;
+    z-index: 1;
+}
+
+#product-image {
+    height: 100%;
+    width: 60%;
+    text-align: center;
+    z-index: 1;
+}
+
+#header-image{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    transform: scale(0.95);
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    height: auto;
+}
+
+#features {
+    position: relative;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    justify-content: space-between;
+    height: auto;
+    margin: 5% 14% 5% 14%;
+}
+
+@media(max-width: 1100px) {
+    #features {
+        position: relative;
+        display: grid;
+        grid-template-columns: 100%;
+        justify-content: space-between;
+        height: auto;
+        margin: 5% 14% 5% 14%;
+    }
+}
+
+.feature {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+}
+
+.feature-icon {
+    display: flex;
+    flex-direction: row;
+    flex: 1;
+    height: auto;
+    align-self: center;
+    justify-content: center;
+}
+
+.icon-img {
+    max-width: 80%;
+    max-height: 80%;
+    margin-bottom: 0;
+}
+
+.feature-text {
+    align-self: flex-end;
+    margin-left: 4%;
+    flex: 6;
+}
+
+.feature-text h3 {
+    font-size: 1rem;
+    margin-bottom: 2%;
+}
+
+.feature-text p {
+    font-size: 0.8rem;
+    font-weight: 500;
+    margin-top: 2%;
+}
+
+#video-container {
+    display: flex;
+    justify-content: center;
+    width: 50%;
+    height: 420px;
+    margin-bottom: 4%;
+}
+
+
+#video {
+    flex: 1;
+}
+
+#items {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    height: auto;
+    width: 100%;
+    margin: 5% 5% 5% 5%;
+}
+
+.item {
+    flex : 1;
+    height: auto;
+    margin: 10px;
+    background-color: rgb(231, 231, 231);
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+}
+
+.img-container {
+    display: flex;
+    width: auto;
+    height: 60%;
+    justify-content: center;
+}
+
+.airpod-img {
+    max-width: 80%;
+    max-height: 100%;
+    margin-bottom: 0;
+}
+
+.item-name {
+    font-size: 1rem;
+}
+
+.item h3 {
+    margin: 1.5%;
+}
+
+.extra-info {
+    font-size: 0.7em;
+    margin: 1.5%;
+}
+
+.price {
+    font-size: 0.8em;
+    margin: 1.5%;
+    font-weight: 600;
+    color: rgb(32, 32, 32);
+}
+
+.buy-button {
+    margin: 3%;
+    width: 25%;
+    height: auto;
+    background-color: black;
+    border-style: none;
+    border-radius: 15px;
+    color: rgb(231, 231, 231);
+    font-size: 0.7em;
+    padding: 3%;
+}
+
+.buy-button:hover {
+    background-color: #131212;
+}
