@@ -6,19 +6,17 @@
     <header id="header">
 
         <nav id="nav-bar">
-            <button class="nav-link" type="submit" value="apple-logo">
-                <img style="max-width:80%; max-height:80%" src="images/apple-logo.png" id="img-container">
-            </button>
-            <form action="#features">
-                <button class="nav-link" type="submit" value="go to feature section"> Features </button>
-            </form>
-            <button class="nav-link" type="submit" value="go to how it works section"> How it works </button>
-            <button class="nav-link" type="submit" value="go to pricing section"> Pricing </button>
+            <a href="header" value="apple-logo">
+                <img style="max-width:80%; max-height:80%;" src="images/apple-logo.png">
+            </a>
+            <a href="#features" class="nav-link" value="go to feature section">Features</a>
+            <a href="#video" class="nav-link" value="go to feature section">How it works</a>
+            <a href="#items" class="nav-link" value="go to feature section">Pricing</a>
         </nav>
         <div id="nav-separator"></div>
 
         <div id="header-container">
-            <div id="product-image"> <img id="header-image" src="images/airpods-transparent.webp"> </div>
+            <div id="product-image"> <img id="header-img" src="images/airpods-transparent.webp"> </div>
             <div id="product-container"> 
                 <div id="product"> Airpods </div> 
                 <div id="slogan"> Wireless. Effortless </div>
@@ -125,6 +123,14 @@
                             <button class="buy-button">Buy</button>
                     </div>
                 </div>
+            </div>
+
+            <div class="container" style="margin-bottom: 40px">
+                <form id="form" action="https://www.freecodecamp.com/email-submit">
+                 <h3> Get your own pair of airpods now !</h3>
+                 <input id="email" type="email" placeholder="Enter your email address" name="email">
+                 <button id="submit" type="submit"> Submit </button>
+                </form>
             </div>
 
         </main>
